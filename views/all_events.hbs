@@ -1,0 +1,30 @@
+<div class="container">
+  <h1 class="display-4">All events you participated</h1>
+</div>
+</div>
+<div class="container">
+  <table class="table table-striped">
+    <thead class="text-white" style="background-color:#343A40">
+      <tr>
+        <th>Tittle</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Location</th>
+        <th>Points</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each event}}
+      <tr>
+        <td><a href="#">{{this.title}}</a></td>
+        <td>{{this.description}}</td>
+        <td>{{this.date}}</td>
+        <td>{{this.time}}</td>
+        <td>{{this.location}}</td>
+        <td>{{this.points}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>

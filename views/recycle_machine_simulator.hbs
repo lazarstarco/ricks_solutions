@@ -1,0 +1,45 @@
+
+    <div class="container">
+        <h1 class="display-4">Recycle machine</h1>
+        <p class="lead"><i class="fa fa-recycle fa-3x" aria-hidden="true"></i>
+                    <br>Hello! We are glad that you want to recycle wasted materials.
+                    <br>Here you can put your plastic/glass bottles and aluminium and cans.</p>
+    </div>
+</div>
+
+
+<div class="container">
+    <div class="row mt-3 mb-5">
+        <div class="col-12 col-md-4">
+            <div class="jumbotron pt-3 pb-2 text-white text-center bg-info mt-3 mb-0">
+                <img class="card-img-top d-none d-md-block" src="/images/glass_bottle.png" alt="">
+                <h3>Glass Bottle</h3>
+                <h4 class="display-4"><i class="fa fa-star" aria-hidden="true"></i> 10</h4>
+                <p class="lead">
+                    <p class="btn btn-info btn-lg border-white points-button " onclick="insert('{{user.username}}', 'code', 'Recycled item', 10)">Insert</p>
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="jumbotron bg-warning pt-3 pb-2 text-white text-center mt-3 mb-0">
+                <img class="card-img-top d-none d-md-block" src="/images/can.png" alt="">
+                <h3>Aluminium Can</h3>
+                <h4 class="display-4"><i class="fa fa-star" aria-hidden="true"></i> 15</h4>
+                <p class="lead">
+                    <p class="btn btn-warning btn-lg border-white text-white" onclick="insert('{{user.username}}', 'code', 'Recycled item', 15)">Insert</p>
+                </p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="jumbotron bg-success pt-3 pb-2 text-white text-center mt-3 mb-0">
+                <img class="card-img-top d-none d-md-block" src="/images/plastic_bottle.png" alt="">
+                <h3>Plastic Bottle</h3>
+                <h4 class="display-4"><i class="fa fa-star" aria-hidden="true"></i> 5</h4>
+                <p class="lead">
+                    <p class="btn btn-success btn-lg border-white" onclick="insert('{{user.username}}', 'code', 'Recycled item', 5)">Insert</p>
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

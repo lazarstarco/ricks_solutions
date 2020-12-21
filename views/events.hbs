@@ -1,0 +1,45 @@
+
+            <div class="container">
+                <h1 class="display-4">Events</h1>
+                <p class="lead">Participate in events, and make the earth better place for living!</p>
+            </div>
+        </div>
+        <div class="container mb-3">
+            <div class="text-center mt-5 mb-4">
+                <h3>Find event and earn points!</h3>
+            </div>
+  
+            <div class="row justify-content-center">
+                {{#each event}}
+                <div class="col-12 col-md-4 mt-3">
+                    <div class="card text-center eventDIM">
+                        <img class="card-img-top d-none d-md-block" src="/images/{{this.image_url}}" alt="">
+                        <div class="card-body">
+                            <h4 class="card-title">{{this.title}}</h4>
+                            <p class="card-text">{{this.description}}</p>
+                        </div>
+                        <div class="card-footer text-muted bg-white">
+                            <div class="row">
+                                <div class="col-6">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> {{this.date}}
+                                </div>
+                                <div class="col-6">
+                                    <i class="fa fa-clock-o" aria-hidden="true"></i> {{this.time}}
+                                </div>
+                           </div>
+                        </div>
+                        <div class="card-footer text-muted bg-white">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i> {{this.location}}
+                        </div>
+                        <div class="card-footer text-muted bg-white">
+                                <i class="fa fa-star" aria-hidden="true"></i>{{this.points}}
+                        </div>
+                        <div class=" text-muted bg-white px-0 py-0">
+                            <button id="{{this.id}}" class="btn btn-block btn-success py-2" type="button" onclick="signin(this, true)">Sign in for event</button>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+                
+            </div>
+        </div>

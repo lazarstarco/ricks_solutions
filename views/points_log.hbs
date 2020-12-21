@@ -1,0 +1,42 @@
+<div class="container">
+  <h1 class="display-4">Points history</h1>
+  <p class="lead">Here you can see all your points transaction.</p>
+</div>
+</div>
+<div class="container my-3">
+
+  <table class="table table-striped">
+    <thead class="text-white" style="background-color:#343A40">
+      <tr>
+        <th>Event</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Points</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each log}}
+      {{#if this.condition}}
+      <tr style="color: red;">
+        {{else}}
+      <tr style="color: green;">
+        {{/if}}
+        <td>{{this.event}}</td>
+        <td>{{this.date}}</td>
+        <td>{{this.time}}</td>
+        <td>{{this.points}}</td>
+      </tr>
+      {{/each}}
+      <tr class="text-white" style="background-color:#343A40">
+        <td>
+          Total points
+        </td>
+        <td></td>
+        <td></td>
+        <td>
+          {{user.points}}
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

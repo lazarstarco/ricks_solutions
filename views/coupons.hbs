@@ -1,0 +1,28 @@
+<div class="container">
+  <h1 class="display-4">Coupons</h1>
+  <p class="lead">Spend earnt points on coupons!</p>
+</div>
+</div>
+<div class="container">
+  <div class="text-center mt-5 mb-4">
+    <h3>Use your points on coupons!</h3>
+  </div>
+  <div class="row justify-content-center mb-4">
+    {{#each coupon}}
+    <div class="col-12 col-md-4 mt-3">
+      <div class="card text-center">
+        <img class="card-img-top d-none d-md-block" src="/images/discount.png" alt="">
+        <div class="card-body">
+          <h4 class="card-title">Coupon for {{this.event}}</h4>
+          <p class="card-text">{{this.description}}</p>
+        </div>
+        <div class="card-footer text-muted bg-white">
+          <i class="fa fa-money" aria-hidden="true"></i> {{this.points}}
+        </div>
+        <div class=" text-muted bg-white px-0 py-0">
+          <button class="btn btn-block btn-success py-2" type="button" onclick="insert('{{../user.username}}', 'coupon', '{{this.event}}', {{this.points}}); signin(this, false)">Get Coupon</button>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>

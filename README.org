@@ -1,0 +1,25 @@
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+options: author:t broken-links:nil c:nil creator:nil
+#+options: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:nil
+#+options: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+options: timestamp:t title:t toc:nil todo:t |:t
+#+title: EcoRick
+#+author: Rick's Solutions
+#+language: en
+#+select_tags: export
+#+exclude_tags: noexport
+#+creator: Emacs 27.1 (Org mode 9.3)
+
+EcoRick is a software for raising awareness about ecology and the
+world around us.
+
+Users of the app get points based on the recycling and ecology events
+that they go to.
+
+For now this is only a prototype and for its deployment it’s needed to
+have Node.JS installed. To run the application it’s needed to start
+the server using the command from the project director
+
+#+begin_src
+npm run development
+#+end_src

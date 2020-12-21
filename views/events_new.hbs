@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="border rounded my-2 p-2" style="border-color: #adff2f !important;">
+        <form action="/events/new?username={{user.username}}&points={{user.points}}" method="POST">
+            <div class="form-row">
+                <div class="col form-group">
+                    <label for="title">Title</label>
+                    <input required type="text" class="form-control" id="title" placeholder="Enter title" name="title" value="Cleaning the riverbank">
+                </div>
+                <div class="col form-group">
+                    <label for="image_url">Image URL</label>
+                    <input required type="text" class="form-control" id="image_url" placeholder="Enter image URL"
+                        name="image_url" value="tent.png">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col form-group">
+                    <label for="date">Date</label>
+                    <input required type="date" class="form-control" id="date" placeholder="Enter event date"
+                        name="date">
+                </div>
+                <div class="col form-group">
+                    <label for="time">Time</label>
+                    <input required type="time" class="form-control" id="time" placeholder="Enter event time"
+                        name="time">
+                </div>
+                <div class="col form-group">
+                    <label for="location">Location</label>
+                    <input required type="text" class="form-control" id="location" placeholder="Enter event location"
+                        name="location" value="Danube river">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col form-group">
+                    <label for="points">Points</label>
+                    <input required type="number" min="1" class="form-control" id="points" placeholder="Enter number of points"
+                        name="points" value="3">
+                </div>
+                <div class="col form-group">
+                    <label for="visitors">Maximum number of visitors</label>
+                    <input required type="number" min="1" class="form-control" id="visitors"
+                        placeholder="Enter maximum number of visitors" name="visitors" value="20">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="description">Description</label>
+                <textarea required class="form-control" id="description" rows="3" name="description">
+Cleaning the riverbank is one of the most ecologically friendly things to do
+                </textarea>
+            </div>
+            <div class="form-check">
+                <input required type="checkbox" class="form-check-input" id="terms" name="check">
+                <label class="form-check-label" for="terms">I agree to the <span style="color: #adff2f;">Terms and Conditions</span></label>
+            </div>
+            <button type="submit" class="btn btn-dark my-3" style="color: #adff2f;">Submit</button>
+        </form>
+    </div>
+</div>
+</div>
